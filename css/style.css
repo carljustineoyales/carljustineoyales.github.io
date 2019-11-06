@@ -5,6 +5,82 @@ body {
   overflow-x: hidden;
 }
 
+.scroll-downs {
+  position: absolute;
+  top: 80%;
+  right: 0;
+  bottom: 0;
+  left: 57.5%;
+  width: 34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px 10px 3px;
+  height: 35px;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.scroller {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #fff;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 body header .flex-container {
   display: inline-block;
 }

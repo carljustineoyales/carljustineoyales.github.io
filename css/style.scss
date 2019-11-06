@@ -6,6 +6,41 @@ body {
     overflow-x: hidden;
 }
 
+.scroll-downs {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    bottom: 0;
+    left: 57.5%;
+    
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px 10px 3px;
+    height: 35px;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 1; }
+    25% { transform: translateY(0); opacity: 1;}
+    50% { transform: translateY(25px); opacity: 1;}
+    100% { transform: translateY(0px); opacity: 1;}
+  }
+
 
 
 body {
