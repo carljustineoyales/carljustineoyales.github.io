@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Imprima|Montserrat:300,400,500&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body header .flex-container {
+  display: inline-block;
+}
+
+body header .flex-container nav {
+  background: #2A2A2A;
+  position: fixed;
+  margin: auto;
+  height: 100vh;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body header .flex-container nav .nav-logo img {
+  width: 100px;
+  padding: 20px 50px 20px 50px;
+}
+
+body header .flex-container nav ul.nav-items {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+body header .flex-container nav ul.nav-items li {
+  padding: 10px;
+}
+
+body header .flex-container nav ul.nav-items li a {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+body header .flex-container nav ul.social-links {
+  list-style-type: none;
+  width: 120px;
+  padding-left: 40px;
+}
+
+body header .flex-container nav ul.social-links li {
+  display: inline;
+}
+
+body header .flex-container nav ul.social-links li a img {
+  fill: red;
+  width: 15px;
+  padding: 5px;
+  background: #8E8E8E;
+  border-radius: 6px;
+}
+
+body header .flex-container nav .copyright {
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: white;
+  padding-left: 40px;
+  font-size: 14px;
+}
+
+body header .flex-container nav .copyright p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body header .flex-container .banner {
+  color: white;
+  background: url(images/header.png) right no-repeat;
+  background-size: 1105px;
+  text-align: center;
+  display: inline-block;
+  height: 100vh;
+  width: calc(100vw - 200px);
+  padding-left: 200px;
+}
+
+body header .flex-container .banner .logo {
+  position: relative;
+  text-align: right;
+}
+
+body header .flex-container .banner .logo img {
+  width: 50px;
+  padding: 50px;
+}
+
+body header .flex-container .banner .text {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 45%;
+  margin: auto;
+}
+
+body header .flex-container .banner .text .typed-cursor {
+  font-size: 40px;
+}
+
+body header .flex-container .banner .text h1 {
+  display: inline;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 40px;
+}
+
+body header .flex-container .banner .text h2 {
+  font-family: "Imprima";
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */
