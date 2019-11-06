@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Imprima|Montserrat:300,400,500&display=swap');
-body{
+
+body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -7,11 +8,12 @@ body{
 
 
 
-body{
-    header{
-        .flex-container{
-            display: inline-block;  
-            nav{
+body {
+    header {
+        .flex-container {
+            display: inline-block;
+
+            nav {
                 background: #2A2A2A;
                 position: fixed;
                 margin: auto;
@@ -21,40 +23,44 @@ body{
                 flex-direction: column;
                 justify-content: space-evenly;
 
-                .nav-logo{
-                    img{
+                .nav-logo {
+                    img {
                         width: 100px;
                         padding: 20px 50px 20px 50px;
                     }
-                }             
+                }
 
-                ul.nav-items{
+                ul.nav-items {
                     list-style-type: none;
                     padding-left: 30px;
-                    li{
+
+                    li {
                         padding: 10px;
-                        a{
+
+                        a {
                             font-family: "Montserrat";
                             font-weight: 200;
                             font-size: 14px;
                             text-decoration: none;
-                            color: white;                          
+                            color: white;
                         }
                     }
                 }
 
-                ul.social-links{
+                ul.social-links {
                     list-style-type: none;
                     width: 120px;
                     padding-left: 40px;
-                    li{
-                        display: inline;
-                        a{
 
-                            img{
+                    li {
+                        display: inline;
+
+                        a {
+
+                            img {
                                 fill: red;
                                 width: 15px;
-                                padding:5px;
+                                padding: 5px;
                                 background: #8E8E8E;
                                 border-radius: 6px;
                             }
@@ -62,22 +68,23 @@ body{
                     }
                 }
 
-                .copyright{
+                .copyright {
                     font-family: "Montserrat";
                     font-weight: 500;
                     color: white;
                     padding-left: 40px;
                     font-size: 14px;
 
-                    p{
+                    p {
                         font-family: "Montserrat";
                         font-size: 14px;
                         font-weight: 400;
                     }
                 }
             }
-            .banner{
-                
+
+            .banner {
+
                 color: white;
                 background: url(images/header.png) right no-repeat;
                 background-size: 1105px;
@@ -87,48 +94,79 @@ body{
                 width: calc(100vw - 200px);
                 padding-left: 200px;
 
-                .logo{
+                .logo {
                     // float: right;
                     position: relative;
                     text-align: right;
+
                     // padding: 50px;
-                    img{
+                    img {
                         width: 50px;
                         padding: 50px;
                     }
                 }
 
-                .text{
-                    
-                    padding-top:5%;
-                    padding-bottom:5%;
-                    
+                .text {
+
+                    padding-top: 5%;
+                    padding-bottom: 5%;
+
                     width: 45%;
                     margin: auto;
 
                     .typed-cursor {
                         font-size: 40px;
                     }
-                    
-                        h1{
-                            display: inline;
-                            font-family: "Montserrat";
-                            font-weight: 400;
-                            font-size: 40px;
-                        }
-                
-                    hr{
-                        margin-bottom:28px;
+
+                    h1 {
+                        display: inline;
+                        font-family: "Montserrat";
+                        font-weight: 400;
+                        font-size: 40px;
                     }
 
-                    h2{
+                    h2 {
                         font-family: "Imprima";
                         font-weight: 400;
-                        
+
                     }
                 }
             }
         }
     }
-}
 
+    section{
+        width: calc(100vw - 200px);
+        padding-left:200px;
+        
+        ul.grid-nav{
+                width: auto;
+                margin: auto;
+                list-style-type: none;
+                
+                li{ 
+                    padding: 30px 75px 30px 75px;
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            
+        }
+
+        .flex-grid{
+            width: auto;
+            margin: auto;
+            display: inline-grid;
+            grid-template-columns: repeat(3, 362px);
+            grid-template-rows: repeat(4, 362px);
+
+            a{
+                img{
+                    width: 362px;
+                }
+            }
+        }
+
+       
+    }
+}

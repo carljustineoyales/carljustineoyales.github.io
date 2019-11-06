@@ -120,12 +120,48 @@ body header .flex-container .banner .text h1 {
   font-size: 40px;
 }
 
-body header .flex-container .banner .text hr {
-  margin-bottom: 28px;
-}
-
 body header .flex-container .banner .text h2 {
   font-family: "Imprima";
   font-weight: 400;
+}
+
+body section {
+  width: calc(100vw - 200px);
+  padding-left: 200px;
+}
+
+body section ul.grid-nav {
+  width: auto;
+  margin: auto;
+  list-style-type: none;
+}
+
+body section ul.grid-nav li {
+  padding: 30px 75px 30px 75px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body section .flex-grid {
+  width: auto;
+  margin: auto;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: (362px)[3];
+      grid-template-columns: repeat(3, 362px);
+  -ms-grid-rows: (362px)[4];
+      grid-template-rows: repeat(4, 362px);
+}
+
+body section .flex-grid a img {
+  width: 362px;
 }
 /*# sourceMappingURL=style.css.map */
