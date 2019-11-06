@@ -73,7 +73,7 @@ body {
                         padding: 10px;
 
                         a {
-                            font-family: "Montserrat";
+                            font-family: "Montserrat",sans-serif;
                             font-weight: 200;
                             font-size: 14px;
                             text-decoration: none;
@@ -104,14 +104,14 @@ body {
                 }
 
                 .copyright {
-                    font-family: "Montserrat";
+                    font-family: "Montserrat",sans-serif;
                     font-weight: 500;
                     color: white;
                     padding-left: 40px;
                     font-size: 14px;
 
                     p {
-                        font-family: "Montserrat";
+                        font-family: "Montserrat",sans-serif;
                         font-size: 14px;
                         font-weight: 400;
                     }
@@ -130,11 +130,10 @@ body {
                 padding-left: 200px;
 
                 .logo {
-                    // float: right;
+                    
                     position: relative;
                     text-align: right;
 
-                    // padding: 50px;
                     img {
                         width: 50px;
                         padding: 50px;
@@ -145,7 +144,6 @@ body {
 
                     padding-top: 5%;
                     padding-bottom: 5%;
-
                     width: 45%;
                     margin: auto;
 
@@ -155,13 +153,13 @@ body {
 
                     h1 {
                         display: inline;
-                        font-family: "Montserrat";
+                        font-family: "Montserrat",sans-serif;
                         font-weight: 400;
                         font-size: 40px;
                     }
 
                     h2 {
-                        font-family: "Imprima";
+                        font-family: "Imprima",sans-serif;
                         font-weight: 400;
 
                     }
@@ -201,7 +199,5 @@ body {
                 }
             }
         }
-
-       
     }
 }

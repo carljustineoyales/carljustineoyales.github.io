@@ -118,7 +118,7 @@ body header .flex-container nav ul.nav-items li {
 }
 
 body header .flex-container nav ul.nav-items li a {
-  font-family: "Montserrat";
+  font-family: "Montserrat",sans-serif;
   font-weight: 200;
   font-size: 14px;
   text-decoration: none;
@@ -144,7 +144,7 @@ body header .flex-container nav ul.social-links li a img {
 }
 
 body header .flex-container nav .copyright {
-  font-family: "Montserrat";
+  font-family: "Montserrat",sans-serif;
   font-weight: 500;
   color: white;
   padding-left: 40px;
@@ -152,7 +152,7 @@ body header .flex-container nav .copyright {
 }
 
 body header .flex-container nav .copyright p {
-  font-family: "Montserrat";
+  font-family: "Montserrat",sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -191,13 +191,13 @@ body header .flex-container .banner .text .typed-cursor {
 
 body header .flex-container .banner .text h1 {
   display: inline;
-  font-family: "Montserrat";
+  font-family: "Montserrat",sans-serif;
   font-weight: 400;
   font-size: 40px;
 }
 
 body header .flex-container .banner .text h2 {
-  font-family: "Imprima";
+  font-family: "Imprima",sans-serif;
   font-weight: 400;
 }
 
