@@ -213,7 +213,7 @@ body section ul.grid-nav {
 }
 
 body section ul.grid-nav li {
-  padding: 30px 75px 30px 75px;
+  padding: 30px 70px 30px 70px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -224,6 +224,8 @@ body section ul.grid-nav li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: "Montserrat",sans-serif;
+  color: #2A2A2A;
 }
 
 body section .flex-grid {
