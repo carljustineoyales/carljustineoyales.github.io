@@ -120,6 +120,10 @@ body header .flex-container .banner .text h1 {
   font-size: 40px;
 }
 
+body header .flex-container .banner .text hr {
+  margin-bottom: 28px;
+}
+
 body header .flex-container .banner .text h2 {
   font-family: "Imprima";
   font-weight: 400;
