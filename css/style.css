@@ -5,21 +5,31 @@ body {
   overflow-x: hidden;
 }
 
+body h1 {
+  font-family: "Montserrat",sans-serif;
+  font-size: 40px;
+}
+
+body h2 {
+  font-family: "Imprima",sans-serif;
+  font-size: 20px;
+}
+
+body hr {
+  background: #D6D6D6;
+}
+
 .scroll-downs {
-  position: absolute;
-  top: 80%;
-  right: 0;
-  bottom: 0;
-  left: 57.5%;
   width: 34px;
   height: 55px;
+  margin: 10px auto;
 }
 
 .mousey {
   width: 3px;
   padding: 10px 15px 10px 3px;
   height: 35px;
-  border: 3px solid #fff;
+  border: 3px solid #D6D6D6;
   border-radius: 25px;
   opacity: 0.75;
   -webkit-box-sizing: content-box;
@@ -30,7 +40,7 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 100%;
-  background-color: #fff;
+  background-color: #D6D6D6;
   -webkit-animation-name: scroll;
           animation-name: scroll;
   -webkit-animation-duration: 2.2s;
@@ -81,165 +91,139 @@ body {
   }
 }
 
-body header .flex-container {
-  display: inline-block;
+body header {
+  width: auto;
+  color: #D6D6D6;
 }
 
-body header .flex-container nav {
+body header nav {
   background: #2A2A2A;
-  position: fixed;
-  margin: auto;
-  height: 100vh;
   width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  position: fixed;
+  height: 100%;
+  z-index: 999;
 }
 
-body header .flex-container nav .nav-logo img {
-  width: 100px;
-  padding: 20px 50px 20px 50px;
+body header nav .nav-logo {
+  margin: 50px auto 0px;
+  padding: 0;
 }
 
-body header .flex-container nav ul.nav-items {
+body header nav .nav-logo img {
+  width: 125px;
+}
+
+body header nav ul.nav-items {
   list-style-type: none;
-  padding-left: 30px;
+  width: 125px;
+  margin: 50px auto 0px;
+  padding: 0;
 }
 
-body header .flex-container nav ul.nav-items li {
-  padding: 10px;
+body header nav ul.nav-items li {
+  padding: 5px 0 5px 0;
 }
 
-body header .flex-container nav ul.nav-items li a {
-  font-family: "Montserrat",sans-serif;
-  font-weight: 200;
-  font-size: 14px;
-  text-decoration: none;
-  color: white;
+body header nav ul.nav-items li a {
+  color: inherit;
 }
 
-body header .flex-container nav ul.social-links {
+body header nav .copyright {
+  width: 125px;
+  margin: 50px auto 20px;
+  padding: 0;
+}
+
+body header nav ul.social-links {
   list-style-type: none;
-  width: 120px;
-  padding-left: 40px;
+  width: 125px;
+  margin: 0px auto 50px;
+  padding: 0;
 }
 
-body header .flex-container nav ul.social-links li {
-  display: inline;
+body header nav ul.social-links li {
+  display: inline-block;
+  padding: 0.5px;
 }
 
-body header .flex-container nav ul.social-links li a img {
-  fill: red;
-  width: 15px;
+body header nav ul.social-links li a img {
+  width: 25px;
   padding: 5px;
   background: #8E8E8E;
   border-radius: 6px;
 }
 
-body header .flex-container nav .copyright {
-  font-family: "Montserrat",sans-serif;
-  font-weight: 500;
-  color: white;
-  padding-left: 40px;
-  font-size: 14px;
-}
-
-body header .flex-container nav .copyright p {
-  font-family: "Montserrat",sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-body header .flex-container .banner {
-  color: white;
-  background: url(images/header.png) right no-repeat;
-  background-size: 1105px;
-  text-align: center;
-  display: inline-block;
+body header .banner {
   height: 100vh;
-  width: calc(100vw - 200px);
+  background: url(images/header.png) no-repeat center;
+  background-size: cover;
+  text-align: center;
   padding-left: 200px;
 }
 
-body header .flex-container .banner .logo {
-  position: relative;
-  text-align: right;
-}
-
-body header .flex-container .banner .logo img {
+body header .banner .logo img {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 50px;
-  padding: 50px;
+  margin: 25px;
 }
 
-body header .flex-container .banner .text {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  width: 45%;
-  margin: auto;
+body header .banner .text {
+  width: 50%;
+  margin: 10px auto;
 }
 
-body header .flex-container .banner .text .typed-cursor {
-  font-size: 40px;
-}
-
-body header .flex-container .banner .text h1 {
+body header .banner .text h1 {
   display: inline;
-  font-family: "Montserrat",sans-serif;
-  font-weight: 400;
-  font-size: 40px;
 }
 
-body header .flex-container .banner .text h2 {
-  font-family: "Imprima",sans-serif;
-  font-weight: 400;
+body header .banner .text h2 {
+  margin: 20px auto;
+}
+
+body header .banner .text hr {
+  margin: 0;
+}
+
+body header .banner .text .typed-cursor {
+  font-size: 40px;
 }
 
 body section {
-  width: calc(100vw - 200px);
   padding-left: 200px;
 }
 
 body section ul.grid-nav {
+  text-align: center;
   width: auto;
-  margin: auto;
-  list-style-type: none;
+  margin: auto 0px;
+  padding: 20px;
 }
 
 body section ul.grid-nav li {
-  padding: 30px 70px 30px 70px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-family: "Montserrat",sans-serif;
-  color: #2A2A2A;
+  padding: 0px 50px;
+  display: inline-block;
 }
 
-body section .flex-grid {
-  width: auto;
+body section .collage {
+  width: 1029px;
   margin: auto;
-  display: -ms-inline-grid;
-  display: inline-grid;
-  -ms-grid-columns: (362px)[3];
-      grid-template-columns: repeat(3, 362px);
-  -ms-grid-rows: (362px)[4];
-      grid-template-rows: repeat(4, 362px);
 }
 
-body section .flex-grid a img {
-  width: 362px;
+body section .collage ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body section .collage ul li {
+  display: inline-block;
+  padding: 0.5px;
+  width: 340px;
+  height: 340px;
+}
+
+body section .collage ul li a img {
+  width: 340px;
 }
 /*# sourceMappingURL=style.css.map */

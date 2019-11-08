@@ -4,23 +4,38 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+
+    h1{
+        font-family: "Montserrat",sans-serif;
+        font-size: 40px;
+    }
+
+    h2{
+        font-family: "Imprima",sans-serif;
+        font-size: 20px;
+    }
+
+    hr{
+        background:#D6D6D6;
+    }
 }
 
 .scroll-downs {
-    position: absolute;
-    top: 80%;
-    right: 0;
-    bottom: 0;
-    left: 57.5%;
+    // position: absolute;
+    // top: 80%;
+    // left:62%;
+    // bottom: 0;
+    // left: 0%;
     
     width :34px;
     height: 55px;
+    margin:10px auto;
   }
   .mousey {
     width: 3px;
     padding: 10px 15px 10px 3px;
     height: 35px;
-    border: 3px solid #fff;
+    border: 3px solid #D6D6D6;
     border-radius: 25px;
     opacity: 0.75;
     box-sizing: content-box;
@@ -29,7 +44,7 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 100%;
-    background-color: #fff;
+    background-color: #D6D6D6;
     animation-name: scroll;
     animation-duration: 2.2s;
     animation-iteration-count: infinite;
@@ -42,162 +57,148 @@ body {
   }
 
 
+body{
+    header{
+        
+        width: auto;
+        color:#D6D6D6;
 
-body {
-    header {
-        .flex-container {
-            display: inline-block;
+        nav{
+            background: #2A2A2A;
+            width: 200px;
+            position: fixed;
+            height: 100%;
+            z-index: 999;
 
-            nav {
-                background: #2A2A2A;
-                position: fixed;
-                margin: auto;
-                height: 100vh;
-                width: 200px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-
-                .nav-logo {
-                    img {
-                        width: 100px;
-                        padding: 20px 50px 20px 50px;
-                    }
+            .nav-logo{
+                margin:50px auto 0px;
+                padding: 0;
+                img{
+                    width: 125px;
+                    
+                    
                 }
+            }
 
-                ul.nav-items {
-                    list-style-type: none;
-                    padding-left: 30px;
-
-                    li {
-                        padding: 10px;
-
-                        a {
-                            font-family: "Montserrat",sans-serif;
-                            font-weight: 200;
-                            font-size: 14px;
-                            text-decoration: none;
-                            color: white;
-                        }
-                    }
-                }
-
-                ul.social-links {
-                    list-style-type: none;
-                    width: 120px;
-                    padding-left: 40px;
-
-                    li {
-                        display: inline;
-
-                        a {
-
-                            img {
-                                fill: red;
-                                width: 15px;
-                                padding: 5px;
-                                background: #8E8E8E;
-                                border-radius: 6px;
-                            }
-                        }
-                    }
-                }
-
-                .copyright {
-                    font-family: "Montserrat",sans-serif;
-                    font-weight: 500;
-                    color: white;
-                    padding-left: 40px;
-                    font-size: 14px;
-
-                    p {
-                        font-family: "Montserrat",sans-serif;
-                        font-size: 14px;
-                        font-weight: 400;
+            ul.nav-items{
+                list-style-type: none;
+                width: 125px;
+                margin:50px auto 0px;
+                padding: 0;
+                li{
+                    padding: 5px 0 5px 0;
+                    a{
+                        color: inherit;
+                        
                     }
                 }
             }
 
-            .banner {
+            .copyright{
+                width: 125px;
+                margin:50px auto 20px;
+                padding: 0;
+            }
 
-                color: white;
-                background: url(images/header.png) right no-repeat;
-                background-size: 1105px;
-                text-align: center;
-                display: inline-block;
-                height: 100vh;
-                width: calc(100vw - 200px);
-                padding-left: 200px;
+            ul.social-links{
+                list-style-type: none;
+                    width: 125px;
+                    margin:0px auto 50px;
+                    padding: 0;
+                   
 
-                .logo {
-                    
-                    position: relative;
-                    text-align: right;
+                    li {
+                        display: inline-block;
+                        padding: 0.5px;
 
-                    img {
-                        width: 50px;
-                        padding: 50px;
+                        a {
+
+                            img {
+                                
+                                width: 25px;
+                                padding: 5px;
+                                background: #8E8E8E;
+                                border-radius: 6px;
+                        }
                     }
                 }
+            }
+        }
 
-                .text {
+        .banner{
+            height: 100vh;
+            background: url(images/header.png) no-repeat center;
+            background-size: cover;
+            text-align: center;
+            padding-left: 200px;
+            .logo{
+                
 
-                    padding-top: 5%;
-                    padding-bottom: 5%;
-                    width: 45%;
-                    margin: auto;
+                img{
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                    width: 50px;            
+                    margin: 25px;
+                }
+            }
 
-                    .typed-cursor {
-                        font-size: 40px;
-                    }
+            .text{
+                width: 50%;
+                margin: 10px auto;
 
-                    h1 {
-                        display: inline;
-                        font-family: "Montserrat",sans-serif;
-                        font-weight: 400;
-                        font-size: 40px;
-                    }
+                h1{
+                    display: inline;
+                    
+                }
+                h2{
+                    margin: 20px auto;
+                }
 
-                    h2 {
-                        font-family: "Imprima",sans-serif;
-                        font-weight: 400;
-
-                    }
+                hr{
+                    margin: 0;
+                }
+                .typed-cursor{
+                    font-size: 40px;
                 }
             }
         }
     }
 
     section{
-        width: calc(100vw - 200px);
-        padding-left:200px;
+        padding-left: 200px;
         
         ul.grid-nav{
+            text-align: center;
                 width: auto;
-                margin: auto;
-                list-style-type: none;
-                
-                li{ 
-                    padding: 30px 70px 30px 70px;
-                    display: inline-flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    font-family: "Montserrat",sans-serif;
-                    color:#2A2A2A;
-                }
-            
+                margin:auto 0px;
+                padding: 20px;
+            li{
+                padding:0px 50px;
+                display: inline-block;
+            }
         }
 
-        .flex-grid{
-            width: auto;
-            margin: auto;
-            display: inline-grid;
-            grid-template-columns: repeat(3, 362px);
-            grid-template-rows: repeat(4, 362px);
+        .collage{
+            
+            width: 1029px;
+            margin:auto;
+            ul{
+                list-style-type: none;
+                padding: 0;
+                
+                li{
+                    display: inline-block;
+                    padding: 0.5px;
+                    width: 340px;
+                    height: 340px;
 
-            a{
-                img{
-                    width: 362px;
+                    a{
+
+                        img{
+                            width: 340px;
+                        }
+                    }
                 }
             }
         }
