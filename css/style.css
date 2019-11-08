@@ -3,15 +3,16 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: overlay;
 }
 
 body h1 {
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
 
 body h2 {
-  font-family: "Imprima",sans-serif;
+  font-family: "Imprima", sans-serif;
   font-size: 20px;
 }
 
@@ -19,13 +20,79 @@ body hr {
   background: #D6D6D6;
 }
 
-.scroll-downs {
+body header {
+  width: auto;
+  color: #D6D6D6;
+}
+
+body header nav {
+  background: #2A2A2A;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  z-index: 999;
+}
+
+body header nav .nav-logo {
+  margin: 25px auto;
+  padding: 0;
+}
+
+body header nav .nav-logo img {
+  width: 125px;
+}
+
+body header nav ul.nav-items {
+  list-style-type: none;
+  width: 125px;
+  margin: 25px auto;
+  padding: 0;
+}
+
+body header nav ul.nav-items li {
+  padding: 5px 0 5px 0;
+}
+
+body header nav ul.nav-items li a {
+  color: inherit;
+}
+
+body header nav .copyright {
+  width: 125px;
+  margin: 25px auto;
+  padding: 0;
+}
+
+body header nav ul.social-links {
+  list-style-type: none;
+  width: 125px;
+  margin: 25px auto;
+  padding: 0;
+}
+
+body header nav ul.social-links li {
+  display: inline-block;
+  padding: 0.5px;
+}
+
+body header nav ul.social-links li a img {
+  width: 25px;
+  padding: 5px;
+  background: #8E8E8E;
+  border-radius: 6px;
+}
+
+body header .banner-home {
+  background: url(images/header.png) no-repeat center;
+}
+
+body header .banner-home .scroll-downs {
   width: 34px;
   height: 55px;
   margin: 10px auto;
 }
 
-.mousey {
+body header .banner-home .mousey {
   width: 3px;
   padding: 10px 15px 10px 3px;
   height: 35px;
@@ -36,7 +103,7 @@ body hr {
           box-sizing: content-box;
 }
 
-.scroller {
+body header .banner-home .scroller {
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -91,71 +158,96 @@ body hr {
   }
 }
 
-body header {
+body header .banner-portfolio .logo, body header .banner-about .logo {
+  opacity: 0.7;
+}
+
+body header .banner-portfolio {
+  background: url(images/portfolio_header.png) no-repeat center;
+  background-position: right 0px bottom 0px;
+}
+
+body header .banner-about {
+  background: url(images/about_header.png) no-repeat center;
+  background-position: right 0px bottom 0px;
+}
+
+body header .banner-subcat .text {
   width: auto;
-  color: #D6D6D6;
+  margin: 10px 50px !important;
+  height: 198px;
 }
 
-body header nav {
-  background: #2A2A2A;
-  width: 200px;
-  position: fixed;
-  height: 100%;
-  z-index: 999;
+body header .banner-subcat .rect {
+  width: 700px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.7);
+  text-align: left;
 }
 
-body header nav .nav-logo {
-  margin: 50px auto 0px;
-  padding: 0;
+body header .banner-subcat .rect .container-text {
+  padding: 39px;
 }
 
-body header nav .nav-logo img {
-  width: 125px;
+body header .banner-subcat .rect .container-text h1,
+body header .banner-subcat .rect .container-text h2 {
+  color: #2A2A2A;
+  margin: auto;
 }
 
-body header nav ul.nav-items {
-  list-style-type: none;
-  width: 125px;
-  margin: 50px auto 0px;
-  padding: 0;
+body header .banner-subcat .scroll-downs {
+  width: 34px;
+  height: 55px;
+  margin: 10px auto;
 }
 
-body header nav ul.nav-items li {
-  padding: 5px 0 5px 0;
+body header .banner-subcat .mousey {
+  width: 3px;
+  padding: 10px 15px 10px 3px;
+  height: 35px;
+  border: 3px solid #2A2A2A;
+  border-radius: 25px;
+  opacity: 0.75;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
-body header nav ul.nav-items li a {
-  color: inherit;
+body header .banner-subcat .scroller {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #2A2A2A;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-body header nav .copyright {
-  width: 125px;
-  margin: 50px auto 20px;
-  padding: 0;
-}
-
-body header nav ul.social-links {
-  list-style-type: none;
-  width: 125px;
-  margin: 0px auto 50px;
-  padding: 0;
-}
-
-body header nav ul.social-links li {
-  display: inline-block;
-  padding: 0.5px;
-}
-
-body header nav ul.social-links li a img {
-  width: 25px;
-  padding: 5px;
-  background: #8E8E8E;
-  border-radius: 6px;
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 body header .banner {
   height: 100vh;
-  background: url(images/header.png) no-repeat center;
   background-size: cover;
   text-align: center;
   padding-left: 200px;
@@ -170,8 +262,9 @@ body header .banner .logo img {
 }
 
 body header .banner .text {
-  width: 50%;
+  width: auto;
   margin: 10px auto;
+  height: 198px;
 }
 
 body header .banner .text h1 {
@@ -184,6 +277,7 @@ body header .banner .text h2 {
 
 body header .banner .text hr {
   margin: 0;
+  width: 544px;
 }
 
 body header .banner .text .typed-cursor {
@@ -207,23 +301,49 @@ body section ul.grid-nav li {
 }
 
 body section .collage {
-  width: 1029px;
+  min-width: calc(1024px/2);
   margin: auto;
 }
 
 body section .collage ul {
+  text-align: center;
   list-style-type: none;
   padding: 0;
+  font-size: 0px;
 }
 
 body section .collage ul li {
   display: inline-block;
-  padding: 0.5px;
-  width: 340px;
-  height: 340px;
+  max-width: 340px;
+  max-height: 340px;
 }
 
 body section .collage ul li a img {
-  width: 340px;
+  padding: 2px;
+  max-width: 340px;
+}
+
+body .about {
+  height: 1000px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
 }
 /*# sourceMappingURL=style.css.map */
