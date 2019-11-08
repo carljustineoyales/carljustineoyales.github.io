@@ -27,10 +27,10 @@
         <nav class="d-flex flex-column justify-content-center">
             <div class="nav-logo"><img src="css/images/logo_big_white.png" alt="logo"></div>
             <ul class="nav-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="copyright">&copy; 2019 coyales.
                 <p>Sta. Rosa Laguna, Philippines</p>
@@ -54,19 +54,19 @@
 
         </nav>
 
-        <div class="banner banner-about banner-subcat container-fluid d-flex flex-column justify-content-around">
+        <div class="banner banner-contact banner-subcat container-fluid d-flex flex-column justify-content-around">
             <div class="logo"><img src="css/images/logo_small_dark.png" alt="logo"></div>
             <div class="text">
                 <div class="rect">
                     <div class="container-text">
-                        <h1>ABOUT ME</h1>
-                        <h2>Who am I?</h2>
+                        <h1>Let's Talk</h1>
+                        <h2>Send me a message</h2>
                     </div>
 
                 </div>
             </div>
             <a href="#section-grid" class="down">
-                <div class="scroll-downs-dark">
+                <div class="scroll-downs-light">
                     <div class="mousey">
                         <div class="scroller"></div>
                     </div>
@@ -74,11 +74,44 @@
             </a>
         </div>
     </header>
-    <section id="section-grid" class="about">
+    <section id="section-grid" class="contact">
+        <div class="contact-container">
+            <div class="text-container">
+                    <h1>DROP A MESSAGE</h1>
+                    <h2>I'd like to talk about our next project together</h2>
+            
+            </div>
+        
+        <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+            <input type="text" name="reply_to" placeholder="Your Email" required class="form-control"/>
+            <input type="text" name="subject" placeholder="Subject" required class="form-control"/>
+            <textarea name="text" placeholder="Message" required class="form-control"></textarea>
+            <input type="hidden" name="access_token" value="n3f1xh13me8lh0pgb2wacqlo" />
+           
+            <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" class="form-control"/>
+            <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" class="form-control"/>
+
+            
+            <input id="submit_form" type="submit" value="Send" class="btn btn-dark"/>
+           
+            <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+            
+        </form>
+    </div>
+  
 
     </section>
 
-
+    <script>
+        var submitButton = document.getElementById("submit_form");
+        var form = document.getElementById("email_form");
+        form.addEventListener("submit", function (e) {
+            setTimeout(function () {
+                submitButton.value = "Sending...";
+                submitButton.disabled = true;
+            }, 1);
+        });
+    </script>
 </body>
 
 </html>

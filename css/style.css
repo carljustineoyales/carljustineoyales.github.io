@@ -20,6 +20,66 @@ body hr {
   background: #D6D6D6;
 }
 
+.scroll-downs-dark {
+  width: 34px;
+  height: 55px;
+  margin: 10px auto;
+}
+
+.scroll-downs-dark .mousey {
+  width: 3px;
+  padding: 10px 15px 10px 3px;
+  height: 35px;
+  border: 3px solid #2A2A2A;
+  border-radius: 25px;
+  opacity: 0.75;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.scroll-downs-dark .mousey .scroller {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #2A2A2A;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.scroll-downs-light {
+  width: 34px;
+  height: 55px;
+  margin: 10px auto;
+}
+
+.scroll-downs-light .mousey {
+  width: 3px;
+  padding: 10px 15px 10px 3px;
+  height: 35px;
+  border: 3px solid #D6D6D6;
+  border-radius: 25px;
+  opacity: 0.75;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.scroll-downs-light .scroller {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #D6D6D6;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 body header {
   width: auto;
   color: #D6D6D6;
@@ -86,36 +146,6 @@ body header .banner-home {
   background: url(images/header.png) no-repeat center;
 }
 
-body header .banner-home .scroll-downs {
-  width: 34px;
-  height: 55px;
-  margin: 10px auto;
-}
-
-body header .banner-home .mousey {
-  width: 3px;
-  padding: 10px 15px 10px 3px;
-  height: 35px;
-  border: 3px solid #D6D6D6;
-  border-radius: 25px;
-  opacity: 0.75;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-body header .banner-home .scroller {
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background-color: #D6D6D6;
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
-  -webkit-animation-duration: 2.2s;
-          animation-duration: 2.2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
 @-webkit-keyframes scroll {
   0% {
     opacity: 1;
@@ -158,7 +188,9 @@ body header .banner-home .scroller {
   }
 }
 
-body header .banner-portfolio .logo, body header .banner-about .logo {
+body header .banner-portfolio .logo,
+body header .banner-about .logo,
+body header .banner-contact .logo {
   opacity: 0.7;
 }
 
@@ -170,6 +202,10 @@ body header .banner-portfolio {
 body header .banner-about {
   background: url(images/about_header.png) no-repeat center;
   background-position: right 0px bottom 0px;
+}
+
+body header .banner-contact {
+  background: url(images/contact_header.png) no-repeat center;
 }
 
 body header .banner-subcat .text {
@@ -193,36 +229,6 @@ body header .banner-subcat .rect .container-text h1,
 body header .banner-subcat .rect .container-text h2 {
   color: #2A2A2A;
   margin: auto;
-}
-
-body header .banner-subcat .scroll-downs {
-  width: 34px;
-  height: 55px;
-  margin: 10px auto;
-}
-
-body header .banner-subcat .mousey {
-  width: 3px;
-  padding: 10px 15px 10px 3px;
-  height: 35px;
-  border: 3px solid #2A2A2A;
-  border-radius: 25px;
-  opacity: 0.75;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-body header .banner-subcat .scroller {
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background-color: #2A2A2A;
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
-  -webkit-animation-duration: 2.2s;
-          animation-duration: 2.2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 @keyframes scroll {
@@ -327,23 +333,57 @@ body .about {
   height: 1000px;
 }
 
+body .contact {
+  height: 100vh;
+}
+
+body .contact .contact-container {
+  width: 800px;
+  padding: calc((100vh - 466px)/10) 0px;
+  margin: auto;
+  text-align: center;
+}
+
+body .contact .contact-container .text-container {
+  padding: 50px 0px;
+}
+
+body .contact .contact-container form {
+  margin: auto;
+  width: inherit;
+}
+
+body .contact .contact-container form input {
+  width: 800px;
+  margin: 10px auto;
+  border-radius: 6px;
+}
+
+body .contact .contact-container form textarea {
+  display: unset !important;
+  margin: 0;
+  width: 800px;
+  height: 200px;
+  border-radius: 6px;
+}
+
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #2A2A2A;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555555;
+  background: #3b3b3b;
 }
 /*# sourceMappingURL=style.css.map */

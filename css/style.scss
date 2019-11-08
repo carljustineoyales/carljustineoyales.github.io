@@ -23,7 +23,71 @@ body {
     }
 }
 
+.scroll-downs-dark {
+    // position: absolute;
+    // top: 80%;
+    // left:62%;
+    // bottom: 0;
+    // left: 0%;
 
+    width: 34px;
+    height: 55px;
+    margin: 10px auto;
+
+    .mousey {
+        width: 3px;
+        padding: 10px 15px 10px 3px;
+        height: 35px;
+        border: 3px solid #2A2A2A;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+
+        .scroller {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: #2A2A2A;
+            animation-name: scroll;
+            animation-duration: 2.2s;
+            animation-iteration-count: infinite;
+        }
+
+    }
+}
+
+.scroll-downs-light {
+    // position: absolute;
+    // top: 80%;
+    // left:62%;
+    // bottom: 0;
+    // left: 0%;
+
+    width: 34px;
+    height: 55px;
+    margin: 10px auto;
+
+    .mousey {
+        width: 3px;
+        padding: 10px 15px 10px 3px;
+        height: 35px;
+        border: 3px solid #D6D6D6;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+    }
+
+
+    .scroller {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: #D6D6D6;
+        animation-name: scroll;
+        animation-duration: 2.2s;
+        animation-iteration-count: infinite;
+    }
+}
 
 
 body {
@@ -100,37 +164,7 @@ body {
         .banner-home {
             background: url(images/header.png) no-repeat center;
 
-            .scroll-downs {
-                // position: absolute;
-                // top: 80%;
-                // left:62%;
-                // bottom: 0;
-                // left: 0%;
 
-                width: 34px;
-                height: 55px;
-                margin: 10px auto;
-            }
-
-            .mousey {
-                width: 3px;
-                padding: 10px 15px 10px 3px;
-                height: 35px;
-                border: 3px solid #D6D6D6;
-                border-radius: 25px;
-                opacity: 0.75;
-                box-sizing: content-box;
-            }
-
-            .scroller {
-                width: 15px;
-                height: 15px;
-                border-radius: 100%;
-                background-color: #D6D6D6;
-                animation-name: scroll;
-                animation-duration: 2.2s;
-                animation-iteration-count: infinite;
-            }
 
             @keyframes scroll {
                 0% {
@@ -154,7 +188,9 @@ body {
             }
         }
 
-        .banner-portfolio,.banner-about{
+        .banner-portfolio,
+        .banner-about,
+        .banner-contact {
             .logo {
                 opacity: 0.7;
             }
@@ -165,9 +201,14 @@ body {
             background-position: right 0px bottom 0px;
         }
 
-        .banner-about{
+        .banner-about {
             background: url(images/about_header.png) no-repeat center;
             background-position: right 0px bottom 0px;
+        }
+
+        .banner-contact {
+            background: url(images/contact_header.png) no-repeat center;
+
         }
 
 
@@ -200,37 +241,7 @@ body {
                 }
             }
 
-            .scroll-downs {
-                // position: absolute;
-                // top: 80%;
-                // left:62%;
-                // bottom: 0;
-                // left: 0%;
 
-                width: 34px;
-                height: 55px;
-                margin: 10px auto;
-            }
-
-            .mousey {
-                width: 3px;
-                padding: 10px 15px 10px 3px;
-                height: 35px;
-                border: 3px solid #2A2A2A;
-                border-radius: 25px;
-                opacity: 0.75;
-                box-sizing: content-box;
-            }
-
-            .scroller {
-                width: 15px;
-                height: 15px;
-                border-radius: 100%;
-                background-color: #2A2A2A;
-                animation-name: scroll;
-                animation-duration: 2.2s;
-                animation-iteration-count: infinite;
-            }
 
             @keyframes scroll {
                 0% {
@@ -341,19 +352,57 @@ body {
         }
     }
 
-    .about{
+    .about {
         height: 1000px;
+    }
+
+    .contact {
+        height: 100vh;
+        .contact-container {
+            width: 800px;
+            padding: calc((100vh - 466px)/10) 0px;
+            margin: auto;
+            text-align: center;
+
+            .text-container{
+                padding: 50px 0px;
+            }
+
+            form {
+                margin: auto;
+                width: inherit;
+                
+                input {
+                    
+                    width: 800px;
+                    margin: 10px auto;
+                    border-radius: 6px;
+
+                }
+
+                textarea {
+                    display: unset!important;
+                    margin: 0;
+                    width: 800px;
+                    height: 200px;
+                    border-radius: 6px;
+                }
+            }
+        }
+
+
+
     }
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
     // box-shadow: inset 0 0 5px transparent; 
-    border-radius: 5px;
+    border-radius: 8px;
 
 
 }
@@ -362,10 +411,10 @@ body {
 ::-webkit-scrollbar-thumb {
 
     background: #2A2A2A;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(85, 85, 85);
+    background: #3b3b3b;
 }
