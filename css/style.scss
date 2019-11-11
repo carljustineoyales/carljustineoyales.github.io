@@ -135,7 +135,7 @@ body {
             li {
                 padding: 0px 50px;
 
-                a {
+                button {
                     color: #2A2A2A;
                     text-decoration: none;
                 }
@@ -143,15 +143,19 @@ body {
         }
 
 
-        ul {
+        ul.container {
             padding: 0;
             display: inline-flex;
             flex-wrap: wrap;
             justify-content: center;
-
+            
+            .show {
+                display: block;
+              }
             li {
                 padding: 10px;
-
+                display: none;
+                
                 a {
 
                     // padding: 20px;
@@ -391,23 +395,25 @@ body {
 
 
 ::-webkit-scrollbar {
-    width: 8px;
+    // width: 8px;
+    // background: transparent;
+   display: none; 
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    // box-shadow: inset 0 0 5px transparent; 
-    border-radius: 8px;
-}
+// /* Track */
+// ::-webkit-scrollbar-track {
+//     // box-shadow: inset 0 0 5px transparent; 
+//     border-radius: 8px;
+// }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
 
-    background: #2A2A2A;
-    border-radius: 8px;
-}
+//     background: #2A2A2A;
+//     border-radius: 8px;
+// }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #3b3b3b;
-}
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #3b3b3b;
+// }

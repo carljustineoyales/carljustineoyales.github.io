@@ -144,12 +144,12 @@ body section#collection ul.collection-nav li {
   padding: 0px 50px;
 }
 
-body section#collection ul.collection-nav li a {
+body section#collection ul.collection-nav li button {
   color: #2A2A2A;
   text-decoration: none;
 }
 
-body section#collection ul {
+body section#collection ul.container {
   padding: 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -161,11 +161,16 @@ body section#collection ul {
           justify-content: center;
 }
 
-body section#collection ul li {
-  padding: 10px;
+body section#collection ul.container .show {
+  display: block;
 }
 
-body section#collection ul li a img {
+body section#collection ul.container li {
+  padding: 10px;
+  display: none;
+}
+
+body section#collection ul.container li a img {
   width: 500px;
 }
 
@@ -369,22 +374,6 @@ body section#collection ul li a img {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  border-radius: 8px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #2A2A2A;
-  border-radius: 8px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #3b3b3b;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
