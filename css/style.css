@@ -3,6 +3,10 @@ ul {
   list-style-type: none;
 }
 
+section {
+  padding-left: 200px;
+}
+
 body .show {
   display: none;
 }
@@ -81,7 +85,6 @@ body section#banner {
   color: #D6D6D6;
   background: url("/css/images/header.png") no-repeat center;
   background-size: cover;
-  padding-left: 200px;
   margin: 0px auto;
   height: 100vh;
   text-align: center;
@@ -97,6 +100,7 @@ body section#banner {
 }
 
 body section#banner hr {
+  margin-top: 0;
   background: #D6D6D6;
 }
 
@@ -119,6 +123,50 @@ body section#banner .text #typed {
 
 body section#banner .text .typed-cursor {
   font-size: 40px;
+}
+
+body section#collection {
+  padding-top: 10px;
+}
+
+body section#collection ul.collection-nav {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+body section#collection ul.collection-nav li {
+  padding: 0px 50px;
+}
+
+body section#collection ul.collection-nav li a {
+  color: #2A2A2A;
+  text-decoration: none;
+}
+
+body section#collection ul {
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section#collection ul li {
+  padding: 10px;
+}
+
+body section#collection ul li a img {
+  width: 500px;
 }
 
 @media screen and (max-width: 600px) {

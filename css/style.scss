@@ -4,6 +4,10 @@ ul {
     list-style-type: none;
 }
 
+section {
+    padding-left: 200px;
+}
+
 body {
     .show {
         display: none;
@@ -81,13 +85,14 @@ body {
 
     section#banner {
         hr {
+            margin-top:0;
             background: #D6D6D6;
         }
 
         color: #D6D6D6;
         background: url("/css/images/header.png") no-repeat center;
         background-size: cover;
-        padding-left: 200px;
+
         margin: 0px auto;
         height: 100vh;
         text-align: center;
@@ -114,6 +119,46 @@ body {
 
             .typed-cursor {
                 font-size: 40px;
+            }
+        }
+    }
+
+    section#collection {
+        padding-top: 10px;
+
+        ul.collection-nav {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+
+            li {
+                padding: 0px 50px;
+
+                a {
+                    color: #2A2A2A;
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+        ul {
+            padding: 0;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                padding: 10px;
+
+                a {
+
+                    // padding: 20px;
+                    img {
+                        width: 500px;
+                    }
+                }
             }
         }
     }
