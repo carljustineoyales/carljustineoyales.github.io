@@ -1,29 +1,227 @@
 @import url("https://fonts.googleapis.com/css?family=Imprima|Montserrat:300,400,500&display=swap");
-body {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-  overflow-y: overlay;
+ul {
+  list-style-type: none;
 }
 
-body h1 {
-  font-family: "Montserrat", sans-serif;
+body .show {
+  display: none;
+}
+
+body nav {
+  position: fixed;
+  top: 0;
+  /* Stay in place */
+  background-color: #2A2A2A;
+  color: #D6D6D6;
+  height: 100vh;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body nav .copyright {
+  margin: 25px auto;
+  width: 200px;
+  padding-left: 25px;
+}
+
+body nav .nav-logo {
+  margin: 25px auto;
+  width: 200px;
+  padding-left: 25px;
+}
+
+body nav .nav-logo a img {
+  width: 150px;
+}
+
+body nav .openbtn:hover {
+  background-color: #444;
+}
+
+body nav ul.nav-items {
+  padding-left: 30px;
+}
+
+body nav ul.nav-items li {
+  padding: 5px 0px;
+}
+
+body nav ul.nav-items li a {
+  font-size: 20px;
+  color: #D6D6D6;
+}
+
+body nav ul.social-links {
+  margin: 25px auto;
+  width: 150px;
+  padding-left: 0px;
+}
+
+body nav ul.social-links li {
+  display: inline-block;
+}
+
+body nav ul.social-links li a img {
+  width: 25px;
+  padding: 6px;
+  border-radius: 4px;
+  background: #D6D6D6;
+}
+
+body section#banner {
+  color: #D6D6D6;
+  background: url("/css/images/header.png") no-repeat center;
+  background-size: cover;
+  padding-left: 200px;
+  margin: 0px auto;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body section#banner hr {
+  background: #D6D6D6;
+}
+
+body section#banner .logo {
+  text-align: right;
+  margin: 0px 30px;
+}
+
+body section#banner .logo img {
+  width: 50px;
+}
+
+body section#banner .text {
+  margin: 0px auto;
+}
+
+body section#banner .text #typed {
+  display: inline;
+}
+
+body section#banner .text .typed-cursor {
   font-size: 40px;
 }
 
-body h2 {
-  font-family: "Imprima", sans-serif;
-  font-size: 20px;
-}
-
-body hr {
-  background: #D6D6D6;
+@media screen and (max-width: 600px) {
+  body .show {
+    display: block;
+    position: absolute;
+  }
+  body .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  body .openbtn {
+    font-size: 200%;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    margin: 10px 30px;
+    border: none;
+  }
+  body nav {
+    height: 100vh;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  body nav .nav-logo {
+    margin: 5px auto;
+    width: 200px;
+    padding-left: 50px;
+  }
+  body nav .nav-logo a img {
+    width: 100px;
+  }
+  body nav .copyright {
+    margin: 10px auto;
+    width: 200px;
+    padding-left: 25px;
+  }
+  body nav ul.nav-items {
+    padding-left: 30px;
+  }
+  body nav ul.nav-items li {
+    padding: 2px 0px;
+  }
+  body nav ul.nav-items li a {
+    font-size: 20px;
+    color: #D6D6D6;
+  }
+  body nav ul.social-links {
+    margin: 10px auto;
+    width: 200px;
+    padding-left: 30px;
+  }
+  body nav ul.social-links li {
+    display: inline-block;
+  }
+  body nav ul.social-links li a img {
+    width: 25px;
+    padding: 6px;
+    border-radius: 4px;
+    background: #D6D6D6;
+  }
+  body section#banner {
+    padding-left: 0px;
+  }
+  body section#banner .text {
+    width: 80%;
+    margin: auto;
+  }
+  body section#banner .text h1,
+  body section#banner .text h2,
+  body section#banner .text .typed-cursor {
+    font-size: 1.5em;
+  }
+  body section#banner .logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px 30px;
+  }
+  body section#banner .logo img {
+    width: 50px;
+  }
 }
 
 .scroll-downs-dark {
   width: 34px;
   height: 55px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .scroll-downs-dark .mousey {
@@ -53,7 +251,7 @@ body hr {
 .scroll-downs-light {
   width: 34px;
   height: 55px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .scroll-downs-light .mousey {
@@ -78,72 +276,6 @@ body hr {
           animation-duration: 2.2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-}
-
-body header {
-  width: auto;
-  color: #D6D6D6;
-}
-
-body header nav {
-  background: #2A2A2A;
-  width: 200px;
-  position: fixed;
-  height: 100%;
-  z-index: 999;
-}
-
-body header nav .nav-logo {
-  margin: 25px auto;
-  padding: 0;
-}
-
-body header nav .nav-logo img {
-  width: 125px;
-}
-
-body header nav ul.nav-items {
-  list-style-type: none;
-  width: 125px;
-  margin: 25px auto;
-  padding: 0;
-}
-
-body header nav ul.nav-items li {
-  padding: 5px 0 5px 0;
-}
-
-body header nav ul.nav-items li a {
-  color: inherit;
-}
-
-body header nav .copyright {
-  width: 125px;
-  margin: 25px auto;
-  padding: 0;
-}
-
-body header nav ul.social-links {
-  list-style-type: none;
-  width: 125px;
-  margin: 25px auto;
-  padding: 0;
-}
-
-body header nav ul.social-links li {
-  display: inline-block;
-  padding: 0.5px;
-}
-
-body header nav ul.social-links li a img {
-  width: 25px;
-  padding: 5px;
-  background: #8E8E8E;
-  border-radius: 6px;
-}
-
-body header .banner-home {
-  background: url(images/header.png) no-repeat center;
 }
 
 @-webkit-keyframes scroll {
@@ -186,185 +318,6 @@ body header .banner-home {
             transform: translateY(0px);
     opacity: 1;
   }
-}
-
-body header .banner-portfolio .logo,
-body header .banner-about .logo,
-body header .banner-contact .logo {
-  opacity: 0.7;
-}
-
-body header .banner-portfolio {
-  background: url(images/portfolio_header.png) no-repeat center;
-  background-position: right 0px bottom 0px;
-}
-
-body header .banner-about {
-  background: url(images/about_header.png) no-repeat center;
-  background-position: right 0px bottom 0px;
-}
-
-body header .banner-contact {
-  background: url(images/contact_header.png) no-repeat center;
-}
-
-body header .banner-subcat .text {
-  width: auto;
-  margin: 10px 50px !important;
-  height: 198px;
-}
-
-body header .banner-subcat .rect {
-  width: 700px;
-  height: 150px;
-  background: rgba(255, 255, 255, 0.7);
-  text-align: left;
-}
-
-body header .banner-subcat .rect .container-text {
-  padding: 39px;
-}
-
-body header .banner-subcat .rect .container-text h1,
-body header .banner-subcat .rect .container-text h2 {
-  color: #2A2A2A;
-  margin: auto;
-}
-
-@keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-  50% {
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-body header .banner {
-  height: 100vh;
-  background-size: cover;
-  text-align: center;
-  padding-left: 200px;
-}
-
-body header .banner .logo img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  margin: 25px;
-}
-
-body header .banner .text {
-  width: auto;
-  margin: 10px auto;
-  height: 198px;
-}
-
-body header .banner .text h1 {
-  display: inline;
-}
-
-body header .banner .text h2 {
-  margin: 20px auto;
-}
-
-body header .banner .text hr {
-  margin: 0;
-  width: 544px;
-}
-
-body header .banner .text .typed-cursor {
-  font-size: 40px;
-}
-
-body section {
-  padding-left: 200px;
-}
-
-body section ul.grid-nav {
-  text-align: center;
-  width: auto;
-  margin: auto 0px;
-  padding: 20px;
-}
-
-body section ul.grid-nav li {
-  padding: 0px 50px;
-  display: inline-block;
-}
-
-body section .collage {
-  min-width: calc(1024px/2);
-  margin: auto;
-}
-
-body section .collage ul {
-  text-align: center;
-  list-style-type: none;
-  padding: 0;
-  font-size: 0px;
-}
-
-body section .collage ul li {
-  display: inline-block;
-  max-width: 340px;
-  max-height: 340px;
-}
-
-body section .collage ul li a img {
-  padding: 2px;
-  max-width: 340px;
-}
-
-body .about {
-  height: 1000px;
-}
-
-body .contact {
-  height: 100vh;
-}
-
-body .contact .contact-container {
-  width: 800px;
-  padding: calc((100vh - 466px)/10) 0px;
-  margin: auto;
-  text-align: center;
-}
-
-body .contact .contact-container .text-container {
-  padding: 50px 0px;
-}
-
-body .contact .contact-container form {
-  margin: auto;
-  width: inherit;
-}
-
-body .contact .contact-container form input {
-  width: 800px;
-  margin: 10px auto;
-  border-radius: 6px;
-}
-
-body .contact .contact-container form textarea {
-  display: unset !important;
-  margin: 0;
-  width: 800px;
-  height: 200px;
-  border-radius: 6px;
 }
 
 ::-webkit-scrollbar {
