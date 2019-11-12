@@ -5,6 +5,15 @@ ul {
 
 section {
   padding-left: 200px;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-family: "Imprima", sans-serif;
 }
 
 body .show {
@@ -14,6 +23,7 @@ body .show {
 body nav {
   position: fixed;
   top: 0;
+  bottom: 0;
   /* Stay in place */
   background-color: #2A2A2A;
   color: #D6D6D6;
@@ -81,12 +91,71 @@ body nav ul.social-links li a img {
   background: #D6D6D6;
 }
 
+body .home {
+  background: url("/css/images/header.png") no-repeat center;
+}
+
+body .portfolio {
+  background: url("/css/images/portfolio_header.png") no-repeat center;
+}
+
+body .portfolio .text {
+  height: 142px;
+  width: 700px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px 100px 20px 20px;
+  margin-left: 20px !important;
+  color: #2A2A2A;
+  text-align: left !important;
+}
+
+body .contact-header {
+  background: url("/css/images/contact_header.png") no-repeat center;
+}
+
+body .item-preview-themescape {
+  background: url("../css/images/themescape_header.png") no-repeat center;
+}
+
+body .item-preview-themescape .text h1 {
+  padding: 26px 0px;
+}
+
+body .item-preview-myportfolio {
+  background: url("../css/images/myportfoliodesign_header.png") no-repeat center;
+}
+
+body .item-preview-myportfolio .text h1 {
+  padding: 26px 0px;
+}
+
+body #brief .container {
+  padding: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body #brief .container .left, body #brief .container .right {
+  padding: 0px 30px;
+}
+
+body #brief .container .left {
+  text-align: center;
+}
+
+body #brief .container .left .info {
+  padding-top: 20px;
+  text-align: right;
+}
+
 body section#banner {
   color: #D6D6D6;
-  background: url("/css/images/header.png") no-repeat center;
   background-size: cover;
   margin: 0px auto;
-  height: 100vh;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,9 +213,24 @@ body section#collection ul.collection-nav li {
   padding: 0px 50px;
 }
 
-body section#collection ul.collection-nav li button {
+body section#collection ul.collection-nav li .btn {
   color: #2A2A2A;
   text-decoration: none;
+  border: none;
+  padding: 12px 16px;
+  background-color: #D6D6D6;
+  cursor: pointer;
+  width: 120px;
+}
+
+body section#collection ul.collection-nav li .btn.active {
+  background-color: #2a2a2a;
+  color: #D6D6D6;
+}
+
+body section#collection ul.collection-nav li .btn:hover {
+  background-color: #555555;
+  color: #D6D6D6;
 }
 
 body section#collection ul.container {
@@ -174,101 +258,56 @@ body section#collection ul.container li a img {
   width: 500px;
 }
 
-@media screen and (max-width: 600px) {
-  body .show {
-    display: block;
-    position: absolute;
-  }
-  body .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  body .openbtn {
-    font-size: 200%;
-    cursor: pointer;
-    background: transparent;
-    color: white;
-    margin: 10px 30px;
-    border: none;
-  }
-  body nav {
-    height: 100vh;
-    /* Specify a height */
-    width: 0;
-    /* 0 width - change this with JavaScript */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 60px;
-    /* Place content 60px from the top */
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidepanel */
-  }
-  body nav .nav-logo {
-    margin: 5px auto;
-    width: 200px;
-    padding-left: 50px;
-  }
-  body nav .nav-logo a img {
-    width: 100px;
-  }
-  body nav .copyright {
-    margin: 10px auto;
-    width: 200px;
-    padding-left: 25px;
-  }
-  body nav ul.nav-items {
-    padding-left: 30px;
-  }
-  body nav ul.nav-items li {
-    padding: 2px 0px;
-  }
-  body nav ul.nav-items li a {
-    font-size: 20px;
-    color: #D6D6D6;
-  }
-  body nav ul.social-links {
-    margin: 10px auto;
-    width: 200px;
-    padding-left: 30px;
-  }
-  body nav ul.social-links li {
-    display: inline-block;
-  }
-  body nav ul.social-links li a img {
-    width: 25px;
-    padding: 6px;
-    border-radius: 4px;
-    background: #D6D6D6;
-  }
-  body section#banner {
-    padding-left: 0px;
-  }
-  body section#banner .text {
-    width: 80%;
-    margin: auto;
-  }
-  body section#banner .text h1,
-  body section#banner .text h2,
-  body section#banner .text .typed-cursor {
-    font-size: 1.5em;
-  }
-  body section#banner .logo {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 20px 30px;
-  }
-  body section#banner .logo img {
-    width: 50px;
-  }
+body section#contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+body section#contact .btn {
+  width: 200px;
+  background: transparent;
+  color: #2A2A2A;
+  border-color: #2A2A2A;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+body section#contact .send {
+  background: #2a2a2a;
+  color: #d6d6d6;
+}
+
+body section#contact .btn:hover {
+  background: #444444;
+  color: #D6D6D6;
+}
+
+body section#contact .text-container {
+  margin-bottom: 50px;
+}
+
+body section#contact .text-container h1 {
+  font-size: 30px;
+}
+
+body section#contact .text-container h2 {
+  font-size: 18px;
+}
+
+body section#contact .contact-container {
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+body section#contact .contact-container input, body section#contact .contact-container textarea, body section#contact .contact-container a {
+  margin: 10px 0px;
+}
+
+body section#contact .contact-container textarea {
+  height: 250px;
 }
 
 .scroll-downs-dark {

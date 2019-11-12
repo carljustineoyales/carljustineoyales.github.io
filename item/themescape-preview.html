@@ -23,14 +23,14 @@
 
 <body>
     <header>
-
-        <nav>
-            <div class="nav-logo"><img src="../css/images/logo_big_white.png" alt="logo"></div>
+        <nav id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn show" onclick="closeNav()">&times;</a>
+            <div class="nav-logo"><a href="#"><img src="../css/images/logo_big_white.png" alt="logo"></a></div>
             <ul class="nav-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../contact.html">Contact</a></li>
             </ul>
             <div class="copyright">&copy; 2019 coyales.
                 <p>Sta. Rosa Laguna, Philippines</p>
@@ -53,37 +53,119 @@
             </ul>
 
         </nav>
+        <button class="openbtn show" onclick="openNav()">&#9776;</button>
+    </header>
 
-        <div class="banner banner-contact banner-subcat">
-            <div class="logo"><img src="../css/images/logo_small_dark.png" alt="logo"></div>
-            <div class="text">
-                <div class="rect">
-                    <div class="container-text">
-                        <h1>Let's Talk</h1>
-                        <h2>Send me a message</h2>
-                    </div>
-
+    <section id="banner"class="item-preview-themescape portfolio">
+        <div class="logo"><img src="../css/images/logo_big_white.png" alt="logo"></div>
+        <div class="text">
+            <h1>themescape</h1>
+            
+        </div>
+        <a href="#brief" class="down">
+            <div class="scroll-downs-light">
+                <div class="mousey">
+                    <div class="scroller"></div>
                 </div>
             </div>
-            <a href="#section-grid" class="down">
-                <div class="scroll-downs-light">
-                    <div class="mousey">
-                        <div class="scroller"></div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </header>
-    <section id="section-grid" class="description">
-        <!-- insert image -->
-
-        <p>Name: Themescape</p>
-        <p>Date: 11/01/2019</p>
-        <p>Categories: Web design</p>
-
-        <p>Overview</p>
-        <p>Description</p>
+        </a>
     </section>
+
+    <section id="brief">
+        <div class="container">
+            <div class="left">
+                    <a href="https://www.behance.net/gallery/87629215/Online-Theme-Store"><img src="../css/images/themescape.png"/></a>
+                    <p><i>Click Image to Preview</i></p>
+                    <div class="info">
+                            <p><b>Name:</b> themescape</p>
+                            <p><b>Date:</b> Nov. 03 2019</p>
+                            <p><b>Category:</b> Web Design</p>
+                    </div>
+                   
+            </div>
+            <div class="right">
+                <h1>OVERVIEW</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam nisi dolorum quia ducimus, dolore hic, unde aut aperiam a exercitationem architecto recusandae adipisci officiis ratione odit laboriosam, labore error mollitia.
+                Et facere, iste unde earum iure autem cupiditate accusamus dicta enim dolorem perferendis eum, minima incidunt aperiam harum eveniet eaque praesentium tenetur atque culpa. Ipsum vero excepturi maxime illum rem!
+                Aut eos beatae nam. Soluta corporis non, eos quos, sit iusto quaerat sint explicabo, modi laudantium ex doloribus quia temporibus! Doloremque soluta obcaecati odio perferendis ducimus, ipsum veniam repellat accusantium?
+                Sunt quaerat voluptates quibusdam culpa repellat placeat nulla excepturi aspernatur harum maiores impedit, deserunt nihil sint, nam laudantium voluptatibus sequi tempore quis! Repellat nostrum facilis fugit recusandae autem, doloremque perferendis!
+                Fugit corporis, expedita nostrum dolores vitae cupiditate iste minus adipisci quia porro commodi, modi quasi? Sit iure dolores officiis, quo nemo doloremque distinctio aliquid, dolore esse rerum placeat, facere deleniti.
+                Amet id esse excepturi veritatis perspiciatis. Magnam, molestias. Architecto, incidunt nihil rerum est non vero! Autem error atque dolorem, sint, commodi ullam consectetur veniam amet provident quisquam, eum officia aspernatur.
+                Deserunt porro enim illo. Laborum accusamus beatae commodi doloremque libero, possimus, ad delectus enim excepturi quo corporis saepe nisi praesentium incidunt natus laudantium tempora? Similique quae nulla sit odit modi.
+                Deserunt voluptatibus explicabo dolorum ipsum nihil fuga repellat nobis eos nostrum quas assumenda, voluptas nisi? Voluptate inventore, laudantium veniam dolores quibusdam eaque vero cupiditate necessitatibus vitae fugit esse distinctio pariatur!
+                Atque exercitationem, doloribus possimus dignissimos reprehenderit cum, neque repellendus quibusdam magnam aperiam rerum officia non dolor dolore nam veniam ab adipisci distinctio! Itaque vero tempora suscipit eos adipisci ad quia!
+                Rem dolores deleniti ex deserunt magnam numquam doloribus sit obcaecati odio quam vel ab commodi, illum alias laudantium animi. Molestias veritatis et voluptas incidunt doloribus ad. Animi molestiae officia possimus.</p>
+            </div>
+                
+        </div>
+        
+    </section>
+
+    <script>
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "200px";
+        }
+
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 100,
+            loop: true
+        });
+    </script>
+    <script>
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterLi");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                removeClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+            }
+        }
+
+        function addClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function removeClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
