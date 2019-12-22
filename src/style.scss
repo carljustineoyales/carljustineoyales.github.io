@@ -1,0 +1,26 @@
+@import url('reset.css');
+$Saphire-1-hex: #023059;
+$Saphire-2-hex: #1B8EF2;
+$Saphire-3-hex: #79B4D9;
+$Saphire-4-hex: #4BF2E2;
+$Saphire-5-hex: #F2F2F2;
+
+/* Color Theme Swatches in RGBA */
+$Saphire-1-rgba: rgba(1, 48, 89, 1);
+$Saphire-2-rgba: rgba(26, 141, 242, 1);
+$Saphire-3-rgba: rgba(121, 180, 216, 1);
+$Saphire-4-rgba: rgba(75, 242, 225, 1);
+$Saphire-5-rgba: rgba(242, 242, 242, 1);
+
+html {
+    body {
+        header {
+            .content {
+                width: 100vw;
+                height: 100vh;
+                /* Color Theme Swatches in Hex */
+                background-color:  $Saphire-1-rgba;
+            }
+        }
+    }
+}

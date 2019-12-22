@@ -1,0 +1,9 @@
+@import url("reset.css");
+/* Color Theme Swatches in RGBA */
+html body header .content {
+  width: 100vw;
+  height: 100vh;
+  /* Color Theme Swatches in Hex */
+  background-color: #013059;
+}
+/*# sourceMappingURL=style.css.map */
