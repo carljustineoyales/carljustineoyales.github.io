@@ -1,9 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap");
 @import url("reset.css");
 /* Color Theme Swatches in RGBA */
-html body header .content {
-  width: 100vw;
-  height: 100vh;
-  /* Color Theme Swatches in Hex */
+html body {
   background-color: #013059;
+  text-align: center;
+}
+
+html body div {
+  width: 547px;
+  height: 492px;
+  margin: auto;
+}
+
+html body div h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 260px;
+  line-height: 317px;
+  color: #1B8EF2;
+  padding: auto;
+  height: 257px;
+}
+
+html body div h2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 146px;
+  line-height: 178px;
+  color: #1B8EF2;
+  height: 144px;
+}
+
+html body div p {
+  margin-top: 34px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #F2F2F2;
 }
 /*# sourceMappingURL=style.css.map */

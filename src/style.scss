@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap');
 @import url('reset.css');
 $Saphire-1-hex: #023059;
 $Saphire-2-hex: #1B8EF2;
@@ -14,13 +15,50 @@ $Saphire-5-rgba: rgba(242, 242, 242, 1);
 
 html {
     body {
-        header {
-            .content {
-                width: 100vw;
-                height: 100vh;
-                /* Color Theme Swatches in Hex */
-                background-color:  $Saphire-1-rgba;
+        background-color: $Saphire-1-rgba;
+        text-align: center;
+
+        div {
+            width: 547px;
+            height: 492px;
+            margin: auto;
+            h1 {
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 260px;
+                line-height: 317px;
+                color: #1B8EF2;
+                padding: auto;
+                height: 257px;
+            }
+
+            h2 {
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 146px;
+                line-height: 178px;
+                color: #1B8EF2;
+                height: 144px;
+
+            }
+
+            p {
+                margin-top: 34px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+
+                color: #F2F2F2;
             }
         }
+
+
     }
 }
