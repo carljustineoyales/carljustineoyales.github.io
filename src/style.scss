@@ -19,42 +19,33 @@ html {
         text-align: center;
 
         div {
-            width: 547px;
-            height: 492px;
-            margin: auto;
+           width: 100%;
+           position: absolute;
+           top:50%;
+           transform: translateY(-50%);
+           display: flex;
+           flex-direction: column;
+           justify-content: space-evenly;
             h1 {
-
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: bold;
-                font-size: 260px;
-                line-height: 317px;
+                font-size: 160px;
                 color: #1B8EF2;
-                padding: auto;
-                height: 257px;
             }
-
             h2 {
-
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: bold;
-                font-size: 146px;
-                line-height: 178px;
+                font-size: 80px;
                 color: #1B8EF2;
-                height: 144px;
-
             }
-
             p {
-                margin-top: 34px;
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: bold;
-                font-size: 24px;
-                line-height: 29px;
+                font-size: 18px;
                 text-align: center;
-
                 color: #F2F2F2;
             }
         }
