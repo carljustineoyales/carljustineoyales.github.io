@@ -36,7 +36,7 @@ class App extends Component {
       })
       console.log(filteredProject);
 
-        if (false) {
+        if (!false) {
             return (<Page404/>);
         } else {
             return (
