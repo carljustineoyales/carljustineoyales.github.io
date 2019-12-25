@@ -25,8 +25,10 @@ class Work extends Component{
     }
 
     render() {
-
+        //filter project based on the setState
         const filteredProject = this.state.projects.filter((project)=>{
+            
+            //access search on the constructor
           return project.tag.toLowerCase().includes(this.state.search.toLowerCase())
         })
         console.log(filteredProject);

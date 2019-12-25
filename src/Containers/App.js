@@ -6,7 +6,7 @@ import Work from '../Components/Work';
 import Home from '../Components/Home'
 
 const App = () => {
-    switch('Page404'){
+    switch('Home'){
         case 'Work':
             return (<Work/>);
         case 'Home':
