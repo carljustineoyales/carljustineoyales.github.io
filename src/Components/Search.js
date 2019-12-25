@@ -4,7 +4,7 @@ import './Search.css'
 //using destructuring to grabe the object searchField and the property searchChange
 const Search = ({ searchField , searchChange})=>{
     return(
-        <div className="buttons">
+        <div className="search-buttons">
             {/* <input type="search" placeholder="Search Projects" onChange={searchChange}/> */}
             <button value="" onClick={searchChange}>All</button>
             <button value="web design" onClick={searchChange}>Web Design</button>
